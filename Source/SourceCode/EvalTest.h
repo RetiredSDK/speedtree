@@ -18,10 +18,10 @@
 //      Web: http://www.idvinc.com
 
 st_string strFailureCause;
-if (!SpeedTreeKeyUtility::KeyIsValid(g_strKey, strFailureCause))
+/*if (!SpeedTreeKeyUtility::KeyIsValid(g_strKey, strFailureCause))
 {
     SetError(IdvFormatString("License Error: [%s]", strFailureCause.c_str( )).c_str( ));
     return false;
-}
+}*/
 
 #endif // !FULL_SPEEDTREE_LIB

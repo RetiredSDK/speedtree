@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug (Eval Y-up)|Win32">
+      <Configuration>Debug (Eval Y-up)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug (Eval Z-up)|Win32">
+      <Configuration>Debug (Eval Z-up)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug (Full)|Win32">
+      <Configuration>Debug (Full)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release (Eval Y-up)|Win32">
+      <Configuration>Release (Eval Y-up)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release (Eval Z-up)|Win32">
+      <Configuration>Release (Eval Z-up)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release (Full)|Win32">
+      <Configuration>Release (Full)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>SpeedTreeRT_StaticLib</ProjectName>
+    <ProjectGuid>{F86AEE86-A9CA-44DA-B77B-68B06489E26E}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (Eval Y-up)|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Eval Y-up)|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (Eval Z-up)|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Eval Z-up)|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (Full)|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Full)|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release (Eval Y-up)|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Eval Y-up)|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release (Eval Z-up)|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Eval Z-up)|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release (Full)|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Full)|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug (Full)|Win32'">.\Debug Full VC14\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug (Full)|Win32'">.\Debug Full VC14\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release (Full)|Win32'">.\Release Full VC14\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release (Full)|Win32'">.\Release Full VC14\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug (Eval Z-up)|Win32'">.\Debug Eval Z-up VC14\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug (Eval Z-up)|Win32'">.\Debug Eval Z-up VC14\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release (Eval Z-up)|Win32'">.\Release Eval Z-up VC14\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release (Eval Z-up)|Win32'">.\Release Eval Z-up VC14\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug (Eval Y-up)|Win32'">.\Debug Eval Y-up VC14\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug (Eval Y-up)|Win32'">.\Debug Eval Y-up VC14\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release (Eval Y-up)|Win32'">.\Release Eval Y-up VC14\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release (Eval Y-up)|Win32'">.\Release Eval Y-up VC14\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Full)|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;FULL_SPEEDTREE_LIB;UPVECTOR_POS_Z;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\Debug Full VC14\RT_StaticLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug Full VC14\</AssemblerListingLocation>
+      <ObjectFileName>.\Debug Full VC14\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug Full VC14\</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>..\..\lib\VC14\Debug\SpeedTreeRT_Static_d.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <PostBuildEvent>
+      <Message>Copying SpeedTreeRT header files...</Message>
+      <Command>copy "..\SourceCode\SpeedTreeRT.h" ..\..\include
+copy "..\SourceCode\SpeedTreeAllocator.h" ..\..\include
+copy "..\SourceCode\SpeedTreeMemory.h" ..\..\include
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release (Full)|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;FULL_SPEEDTREE_LIB;UPVECTOR_POS_Z;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <FloatingPointModel>Strict</FloatingPointModel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\Release Full VC14\RT_StaticLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release Full VC14\</AssemblerListingLocation>
+      <ObjectFileName>.\Release Full VC14\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release Full VC14\</ProgramDataBaseFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>..\..\lib\VC14\Release\SpeedTreeRT_Static.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <PostBuildEvent>
+      <Message>Copying SpeedTreeRT header files...</Message>
+      <Command>copy "..\SourceCode\SpeedTreeRT.h" ..\..\include
+copy "..\SourceCode\SpeedTreeAllocator.h" ..\..\include
+copy "..\SourceCode\SpeedTreeMemory.h" ..\..\include
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Eval Z-up)|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;UPVECTOR_POS_Z;EXPOSE_REGISTRY_FUNCTIONS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\Debug Eval Z-up VC14\RT_StaticLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug Eval Z-up VC14\</AssemblerListingLocation>
+      <ObjectFileName>.\Debug Eval Z-up VC14\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug Eval Z-up VC14\</ProgramDataBaseFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>..\..\lib\VC14\Debug\SpeedTreeRT_Static_Eval_Zup_d.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <PostBuildEvent>
+      <Message>Copying SpeedTreeRT header files...</Message>
+      <Command>copy "..\SourceCode\SpeedTreeRT.h" ..\..\include
+copy "..\SourceCode\SpeedTreeAllocator.h" ..\..\include
+copy "..\SourceCode\SpeedTreeMemory.h" ..\..\include
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release (Eval Z-up)|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;UPVECTOR_POS_Z;EXPOSE_REGISTRY_FUNCTIONS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\Release Eval Z-up VC14\RT_StaticLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release Eval Z-up VC14\</AssemblerListingLocation>
+      <ObjectFileName>.\Release Eval Z-up VC14\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release Eval Z-up VC14\</ProgramDataBaseFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>..\..\lib\VC14\Release\SpeedTreeRT_Static_Eval_Zup.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <PostBuildEvent>
+      <Message>Copying SpeedTreeRT header files...</Message>
+      <Command>copy "..\SourceCode\SpeedTreeRT.h" ..\..\include
+copy "..\SourceCode\SpeedTreeAllocator.h" ..\..\include
+copy "..\SourceCode\SpeedTreeMemory.h" ..\..\include
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Eval Y-up)|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;UPVECTOR_POS_Y;EXPOSE_REGISTRY_FUNCTIONS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\Debug Eval Y-up VC14\RT_StaticLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug Eval Y-up VC14\</AssemblerListingLocation>
+      <ObjectFileName>.\Debug Eval Y-up VC14\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug Eval Y-up VC14\</ProgramDataBaseFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>..\..\lib\VC14\Debug\SpeedTreeRT_Static_Eval_Yup_d.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <PostBuildEvent>
+      <Message>Copying SpeedTreeRT header files...</Message>
+      <Command>copy "..\SourceCode\SpeedTreeRT.h" ..\..\include
+copy "..\SourceCode\SpeedTreeAllocator.h" ..\..\include
+copy "..\SourceCode\SpeedTreeMemory.h" ..\..\include
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release (Eval Y-up)|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;UPVECTOR_POS_Y;EXPOSE_REGISTRY_FUNCTIONS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\Release Eval Y-up VC14\RT_StaticLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release Eval Y-up VC14\</AssemblerListingLocation>
+      <ObjectFileName>.\Release Eval Y-up VC14\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release Eval Y-up VC14\</ProgramDataBaseFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>..\..\lib\VC14\Release\SpeedTreeRT_Static_Eval_Yup.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <PostBuildEvent>
+      <Message>Copying SpeedTreeRT header files...</Message>
+      <Command>copy "..\SourceCode\SpeedTreeRT.h" ..\..\include
+copy "..\SourceCode\SpeedTreeAllocator.h" ..\..\include
+copy "..\SourceCode\SpeedTreeMemory.h" ..\..\include
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\SourceCode\Allocator.cpp" />
+    <ClCompile Include="..\SourceCode\BillboardLeaf.cpp" />
+    <ClCompile Include="..\SourceCode\Branch.cpp" />
+    <ClCompile Include="..\SourceCode\BranchInfo.cpp" />
+    <ClCompile Include="..\SourceCode\Camera.cpp" />
+    <ClCompile Include="..\SourceCode\FileAccess.cpp" />
+    <ClCompile Include="..\SourceCode\FrondEngine.cpp" />
+    <ClCompile Include="..\SourceCode\IndexedGeometry.cpp" />
+    <ClCompile Include="..\SourceCode\LeafGeometry.cpp" />
+    <ClCompile Include="..\SourceCode\LeafInfo.cpp" />
+    <ClCompile Include="..\SourceCode\LeafLod.cpp" />
+    <ClCompile Include="..\SourceCode\LightingEngine.cpp" />
+    <ClCompile Include="..\SourceCode\MapBank.cpp" />
+    <ClCompile Include="..\SourceCode\ProjectedShadow.cpp" />
+    <ClCompile Include="..\SourceCode\RootSupportInfo.cpp" />
+    <ClCompile Include="..\SourceCode\SimpleBillboard.cpp" />
+    <ClCompile Include="..\SourceCode\SpeedTreeRT.cpp" />
+    <ClCompile Include="..\SourceCode\SpeedWind.cpp" />
+    <ClCompile Include="..\SourceCode\TreeEngine.cpp" />
+    <ClCompile Include="..\SourceCode\TreeInfo.cpp" />
+    <ClCompile Include="..\SourceCode\WindEngine.cpp" />
+    <ClCompile Include="..\SourceCode\WindInfo.cpp" />
+    <ClCompile Include="..\SourceCode\LibSpline_Source\IdvSpline.cpp" />
+    <ClCompile Include="..\SourceCode\LibRandom_Source\ExtendedReal.cpp" />
+    <ClCompile Include="..\SourceCode\LibRandom_Source\IdvRandom.cpp" />
+    <ClCompile Include="..\SourceCode\LibRandom_Source\RobertDavies_Random.cpp" />
+    <ClCompile Include="..\SourceCode\LibVector_Source\Region.cpp" />
+    <ClCompile Include="..\SourceCode\LibVector_Source\Transform.cpp" />
+    <ClCompile Include="..\SourceCode\LibVector_Source\Vec.cpp" />
+    <ClCompile Include="..\SourceCode\EvalKey_Source\IdvTime.cpp" />
+    <ClCompile Include="..\SourceCode\EvalKey_Source\SpeedTreeKeyUtility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\SourceCode\BillboardLeaf.h" />
+    <ClInclude Include="..\SourceCode\Debug.h" />
+    <ClInclude Include="..\SourceCode\FileAccess.h" />
+    <ClInclude Include="..\SourceCode\IdvFastMath.h" />
+    <ClInclude Include="..\SourceCode\IndexedGeometry.h" />
+    <ClInclude Include="..\SourceCode\Instances.h" />
+    <ClInclude Include="..\SourceCode\LeafGeometry.h" />
+    <ClInclude Include="..\SourceCode\LeafLod.h" />
+    <ClInclude Include="..\SourceCode\LeafOffsetTable.h" />
+    <ClInclude Include="..\SourceCode\LightingEngine.h" />
+    <ClInclude Include="..\SourceCode\MapBank.h" />
+    <ClInclude Include="..\SourceCode\ProjectedShadow.h" />
+    <ClInclude Include="..\SourceCode\SpeedTreeAllocator.h" />
+    <ClInclude Include="..\SourceCode\SpeedTreeMemory.h" />
+    <ClInclude Include="..\SourceCode\SpeedTreeRT.h" />
+    <ClInclude Include="..\SourceCode\StructsInfo.h" />
+    <ClInclude Include="..\SourceCode\StructsSupport.h" />
+    <ClInclude Include="..\SourceCode\TreeEngine.h" />
+    <ClInclude Include="..\SourceCode\WindEngine.h" />
+    <ClInclude Include="..\SourceCode\LibSpline_Source\IdvSpline.h" />
+    <ClInclude Include="..\SourceCode\LibRandom_Source\ExtendedReal.h" />
+    <ClInclude Include="..\SourceCode\LibRandom_Source\IdvRandom.h" />
+    <ClInclude Include="..\SourceCode\LibRandom_Source\RobertDavies_Random.h" />
+    <ClInclude Include="..\SourceCode\LibGlobals_Source\IdvGlobals.h" />
+    <ClInclude Include="..\SourceCode\LibFilename_Source\IdvFilename.h" />
+    <ClInclude Include="..\SourceCode\LibVector_Source\IdvVector.h" />
+    <ClInclude Include="..\SourceCode\EvalKey_Source\IdvTime.h" />
+    <ClInclude Include="..\SourceCode\EvalKey_Source\KeyRandom.h" />
+    <ClInclude Include="..\SourceCode\EvalKey_Source\SpeedTreeKeyUtility.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

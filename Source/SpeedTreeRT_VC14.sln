@@ -1,0 +1,45 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SpeedTreeRT_DynamicLib", "RT_DynamicLib\SpeedTreeRT_DynamicLib_VC14.vcxproj", "{9C1790C8-2629-47CB-B138-8775900165FB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SpeedTreeRT_StaticLib", "RT_StaticLib\SpeedTreeRT_StaticLib_VC14.vcxproj", "{F86AEE86-A9CA-44DA-B77B-68B06489E26E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug (Eval Y-up)|Win32 = Debug (Eval Y-up)|Win32
+		Debug (Eval Z-up)|Win32 = Debug (Eval Z-up)|Win32
+		Debug (Full)|Win32 = Debug (Full)|Win32
+		Release (Eval Y-up)|Win32 = Release (Eval Y-up)|Win32
+		Release (Eval Z-up)|Win32 = Release (Eval Z-up)|Win32
+		Release (Full)|Win32 = Release (Full)|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C1790C8-2629-47CB-B138-8775900165FB}.Debug (Eval Y-up)|Win32.ActiveCfg = Debug (Eval Y-up)|Win32
+		{9C1790C8-2629-47CB-B138-8775900165FB}.Debug (Eval Y-up)|Win32.Build.0 = Debug (Eval Y-up)|Win32
+		{9C1790C8-2629-47CB-B138-8775900165FB}.Debug (Eval Z-up)|Win32.ActiveCfg = Debug (Eval Z-up)|Win32
+		{9C1790C8-2629-47CB-B138-8775900165FB}.Debug (Eval Z-up)|Win32.Build.0 = Debug (Eval Z-up)|Win32
+		{9C1790C8-2629-47CB-B138-8775900165FB}.Debug (Full)|Win32.ActiveCfg = Debug (Full)|Win32
+		{9C1790C8-2629-47CB-B138-8775900165FB}.Debug (Full)|Win32.Build.0 = Debug (Full)|Win32
+		{9C1790C8-2629-47CB-B138-8775900165FB}.Release (Eval Y-up)|Win32.ActiveCfg = Release (Eval Y-up)|Win32
+		{9C1790C8-2629-47CB-B138-8775900165FB}.Release (Eval Y-up)|Win32.Build.0 = Release (Eval Y-up)|Win32
+		{9C1790C8-2629-47CB-B138-8775900165FB}.Release (Eval Z-up)|Win32.ActiveCfg = Release (Eval Z-up)|Win32
+		{9C1790C8-2629-47CB-B138-8775900165FB}.Release (Eval Z-up)|Win32.Build.0 = Release (Eval Z-up)|Win32
+		{9C1790C8-2629-47CB-B138-8775900165FB}.Release (Full)|Win32.ActiveCfg = Release (Full)|Win32
+		{9C1790C8-2629-47CB-B138-8775900165FB}.Release (Full)|Win32.Build.0 = Release (Full)|Win32
+		{F86AEE86-A9CA-44DA-B77B-68B06489E26E}.Debug (Eval Y-up)|Win32.ActiveCfg = Debug (Full)|Win32
+		{F86AEE86-A9CA-44DA-B77B-68B06489E26E}.Debug (Eval Y-up)|Win32.Build.0 = Debug (Full)|Win32
+		{F86AEE86-A9CA-44DA-B77B-68B06489E26E}.Debug (Eval Z-up)|Win32.ActiveCfg = Debug (Full)|Win32
+		{F86AEE86-A9CA-44DA-B77B-68B06489E26E}.Debug (Eval Z-up)|Win32.Build.0 = Debug (Full)|Win32
+		{F86AEE86-A9CA-44DA-B77B-68B06489E26E}.Debug (Full)|Win32.ActiveCfg = Debug (Full)|Win32
+		{F86AEE86-A9CA-44DA-B77B-68B06489E26E}.Debug (Full)|Win32.Build.0 = Debug (Full)|Win32
+		{F86AEE86-A9CA-44DA-B77B-68B06489E26E}.Release (Eval Y-up)|Win32.ActiveCfg = Release (Full)|Win32
+		{F86AEE86-A9CA-44DA-B77B-68B06489E26E}.Release (Eval Y-up)|Win32.Build.0 = Release (Full)|Win32
+		{F86AEE86-A9CA-44DA-B77B-68B06489E26E}.Release (Eval Z-up)|Win32.ActiveCfg = Release (Full)|Win32
+		{F86AEE86-A9CA-44DA-B77B-68B06489E26E}.Release (Eval Z-up)|Win32.Build.0 = Release (Full)|Win32
+		{F86AEE86-A9CA-44DA-B77B-68B06489E26E}.Release (Full)|Win32.ActiveCfg = Release (Full)|Win32
+		{F86AEE86-A9CA-44DA-B77B-68B06489E26E}.Release (Full)|Win32.Build.0 = Release (Full)|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

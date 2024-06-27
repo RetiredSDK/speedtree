@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{a7de4bc9-3210-4702-8932-9ebc00c2cf8f}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{d2e9e117-7618-4aea-88f0-225ec4868b38}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="LibSpline_Source">
+      <UniqueIdentifier>{ef6f0e51-6976-40d7-8c7b-29d1d55c4f03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LibRandom_Source">
+      <UniqueIdentifier>{7763fcc7-3375-4009-b149-bbec03b875cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LibGlobals_Source">
+      <UniqueIdentifier>{4a548751-5342-439d-83b5-1c59dda6ee9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LibFilename_Source">
+      <UniqueIdentifier>{b8f6980a-06e2-4626-83e8-6f3e83f4b455}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LibVector_Source">
+      <UniqueIdentifier>{efd4d7f9-ab37-4b93-9bf9-3d3e50ea3508}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EvalKey_Source">
+      <UniqueIdentifier>{622c863e-60d8-482b-ad41-af1d48b4b3d3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\SourceCode\Allocator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\BillboardLeaf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\Branch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\BranchInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\FileAccess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\FrondEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\IndexedGeometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\LeafGeometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\LeafInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\LeafLod.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\LightingEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\MapBank.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\ProjectedShadow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\RootSupportInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\SimpleBillboard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\SpeedTreeRT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\SpeedWind.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\TreeEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\TreeInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\WindEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\WindInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\LibSpline_Source\IdvSpline.cpp">
+      <Filter>LibSpline_Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\LibRandom_Source\ExtendedReal.cpp">
+      <Filter>LibRandom_Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\LibRandom_Source\IdvRandom.cpp">
+      <Filter>LibRandom_Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\LibRandom_Source\RobertDavies_Random.cpp">
+      <Filter>LibRandom_Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\LibVector_Source\Region.cpp">
+      <Filter>LibVector_Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\LibVector_Source\Transform.cpp">
+      <Filter>LibVector_Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\LibVector_Source\Vec.cpp">
+      <Filter>LibVector_Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\EvalKey_Source\IdvTime.cpp">
+      <Filter>EvalKey_Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SourceCode\EvalKey_Source\SpeedTreeKeyUtility.cpp">
+      <Filter>EvalKey_Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\SourceCode\BillboardLeaf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\Debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\FileAccess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\IdvFastMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\IndexedGeometry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\Instances.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\LeafGeometry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\LeafLod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\LeafOffsetTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\LightingEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\MapBank.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\ProjectedShadow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\SpeedTreeAllocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\SpeedTreeMemory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\SpeedTreeRT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\StructsInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\StructsSupport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\TreeEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\WindEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\LibSpline_Source\IdvSpline.h">
+      <Filter>LibSpline_Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\LibRandom_Source\ExtendedReal.h">
+      <Filter>LibRandom_Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\LibRandom_Source\IdvRandom.h">
+      <Filter>LibRandom_Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\LibRandom_Source\RobertDavies_Random.h">
+      <Filter>LibRandom_Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\LibGlobals_Source\IdvGlobals.h">
+      <Filter>LibGlobals_Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\LibFilename_Source\IdvFilename.h">
+      <Filter>LibFilename_Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\LibVector_Source\IdvVector.h">
+      <Filter>LibVector_Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\EvalKey_Source\IdvTime.h">
+      <Filter>EvalKey_Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\EvalKey_Source\KeyRandom.h">
+      <Filter>EvalKey_Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SourceCode\EvalKey_Source\SpeedTreeKeyUtility.h">
+      <Filter>EvalKey_Source</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

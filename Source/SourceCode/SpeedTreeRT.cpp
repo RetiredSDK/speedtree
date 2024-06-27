@@ -2442,19 +2442,7 @@ const float* CSpeedTreeRT::GetLeafBillboardTable(unsigned int& nEntryCount) cons
 
 bool CSpeedTreeRT::Authorize(const char* pKey)
 {
-#ifdef FULL_SPEEDTREE_LIB
-
-#ifndef PS3
-    pKey; // prevent unreferenced parameter warning
-#endif
-
-    return true;
-#else
-    g_strKey = pKey;
-
-    st_string strFailureCause;
-    return SpeedTreeKeyUtility::KeyIsValid(g_strKey, strFailureCause);
-#endif
+return true;
 }
 
 
@@ -2463,12 +2451,7 @@ bool CSpeedTreeRT::Authorize(const char* pKey)
 
 bool CSpeedTreeRT::IsAuthorized(void)
 {
-#ifdef FULL_SPEEDTREE_LIB
-    return true;
-#else
-    st_string strFailureCause;
-    return SpeedTreeKeyUtility::KeyIsValid(g_strKey, strFailureCause);
-#endif
+return true;
 }
 
 

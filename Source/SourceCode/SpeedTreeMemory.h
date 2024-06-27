@@ -22,6 +22,11 @@
 #pragma warning (disable : 4530)
 #endif
 
+#define _HAS_DEPRECATED_ALLOCATOR_MEMBERS 1
+#define _HAS_DEPRECATED_ALLOCATOR_VOID 1
+#define _HAS_DEPRECATED_TEMPORARY_BUFFER 1
+#include <xmemory>
+
 #include "SpeedTreeAllocator.h"
 #include <functional>
 #include <string>
@@ -31,6 +36,7 @@
 // ps3 (malloc and ptrdiff_t)
 #include <stdlib.h>
 #include <stddef.h>
+
 
 
 #ifndef SPEEDTREE_SOURCE_FILE      // any file that's not the one holding the actual definitions of these variables
@@ -229,8 +235,8 @@ template<typename TYPE>                                     \
 class NAME                                                  \
 {                                                           \
 public:                                                     \
-    typedef _SIZT size_type;                                \
-    typedef _PDFT difference_type;                          \
+    typedef size_t size_type;                                \
+    typedef ptrdiff_t difference_type;                          \
     typedef TYPE _FARQ *pointer;                            \
     typedef const TYPE _FARQ *const_pointer;                \
     typedef TYPE _FARQ& reference;                          \
@@ -317,27 +323,21 @@ public:                                                     \
         std::_Destroy(_Ptr);                                \
     }                                                       \
                                                             \
-    _SIZT max_size() const                                  \
+    size_t max_size() const                                  \
     {                                                       \
-        _SIZT _Count = (_SIZT)(-1) / sizeof (TYPE);         \
+        size_t _Count = (size_t)(-1) / sizeof (TYPE);         \
         return (0 < _Count ? _Count : 1);                   \
     }                                                       \
 };
 
 #else // TRACK_ALLOC_STATS
 
+
 #define DefineAllocator(NAME)                               \
 template<typename TYPE>                                     \
-class NAME                                                  \
+class NAME : public std::allocator<TYPE>                    \
 {                                                           \
 public:                                                     \
-    typedef _SIZT size_type;                                \
-    typedef _PDFT difference_type;                          \
-    typedef TYPE _FARQ *pointer;                            \
-    typedef const TYPE _FARQ *const_pointer;                \
-    typedef TYPE _FARQ& reference;                          \
-    typedef const TYPE _FARQ& const_reference;              \
-    typedef TYPE value_type;                                \
                                                             \
     template<typename _Other>                               \
     struct rebind                                           \
@@ -405,17 +405,17 @@ public:                                                     \
                                                             \
     void construct(pointer _Ptr, const TYPE& _Val)          \
     {                                                       \
-        std::_Construct(_Ptr, _Val);                        \
+        std::allocator<TYPE>::construct(_Ptr, _Val);        \
     }                                                       \
                                                             \
     void destroy(pointer _Ptr)                              \
     {                                                       \
-        std::_Destroy(_Ptr);                                \
+        std::allocator<TYPE>::destroy(_Ptr);                 \
     }                                                       \
                                                             \
-    _SIZT max_size() const                                  \
+    size_t max_size() const                                  \
     {                                                       \
-        _SIZT _Count = (_SIZT)(-1) / sizeof (TYPE);         \
+        size_t _Count = (size_t)(-1) / sizeof (TYPE);         \
         return (0 < _Count ? _Count : 1);                   \
     }                                                       \
 };
@@ -550,7 +550,37 @@ struct SIdvBranchVertex;
 
 // convenience typedefs & associated allocators
 typedef unsigned char byte;
-DefineAllocator(st_allocator); // default allocator
+
+template<typename TYPE> class st_allocator: public std::allocator<TYPE> {
+public: 
+    template<typename _Other> struct rebind {
+    typedef st_allocator<_Other> other;
+}; pointer address(reference _Val) {
+    return (&_Val);
+} const_pointer address(const_reference _Val) {
+    return (&_Val);
+} st_allocator() { } st_allocator(const st_allocator<TYPE>&) { } template<typename _Other> st_allocator(const st_allocator<_Other>&) { } template<typename _Other> st_allocator<TYPE>& operator=(const st_allocator<_Other>&) {
+    return (*this);
+} bool operator==(st_allocator const&) const {
+    return true;
+} bool operator!=(st_allocator const&) const {
+    return false;
+} pointer allocate(size_type _Count, const void*) {
+    void* pBlock = g_pAllocator ? g_pAllocator->Alloc(_Count * sizeof(TYPE)) : malloc(_Count * sizeof(TYPE)); g_sMemoryUsed += _Count * sizeof(TYPE); return pointer(pBlock);
+} pointer allocate(size_type _Count) {
+    void* pBlock = g_pAllocator ? g_pAllocator->Alloc(_Count * sizeof(TYPE)) : malloc(_Count * sizeof(TYPE)); g_sMemoryUsed += _Count * sizeof(TYPE); return pointer(pBlock);
+} void deallocate(pointer _Ptr, size_type _Count) {
+    if (_Ptr) {
+        g_sMemoryUsed -= _Count * sizeof(TYPE); if (g_pAllocator) g_pAllocator->Free(_Ptr); else free(_Ptr);
+    }
+} void construct(pointer _Ptr, const TYPE& _Val) {
+    std::allocator<TYPE>::construct(_Ptr, _Val);
+} void destroy(pointer _Ptr) {
+    std::allocator<TYPE>::destroy(_Ptr);
+} size_t max_size() const {
+    size_t _Count = (size_t)(-1) / sizeof(TYPE); return (0 < _Count ? _Count : 1);
+}
+};; // default allocator
 
 DefineAllocator(st_allocator_float);
 typedef std::vector<float, st_allocator_float<float> > st_vector_float;
